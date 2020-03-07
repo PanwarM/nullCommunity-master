@@ -65,3 +65,5 @@
 
 > **EXERCISE-3:**
 > Can you identify the attack surface by analyzing *AndroidManifest.xml* file and other class files?
+
+[Repacking the apk after a change.](../Recompiling_APK/README.md)
