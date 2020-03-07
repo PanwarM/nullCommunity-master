@@ -4,7 +4,7 @@
   - [1. Identify the Supported Architecture](#1-identify-the-supported-architecture)
   - [2. Explore the APK Bundle](#2-explore-the-apk-bundle)
   - [3. Decode using APKTool](#3-decode-using-apktool)
-    - [Decode using SMALI](decode-using-smali)
+    - [Decode using SMALI](#4-decode-using-smali)
 
 ## 1. Identify the Supported Architecture
 
