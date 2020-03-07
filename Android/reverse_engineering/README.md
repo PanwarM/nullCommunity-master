@@ -81,6 +81,5 @@
 
 3. An folder named 'out' will be created in the terminal/command-prompt location.
 
-[To understand about SMALI code](pending)
 
 [Repacking the apk after a change.](../Recompiling_APK/README.md)

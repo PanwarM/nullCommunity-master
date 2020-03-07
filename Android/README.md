@@ -12,3 +12,7 @@ This repository contains hands-on training content for conducting Android app pe
    3. [Drozer](drozer/README.md)
 4. Identifying technology-specific vulnerabilities
    * [Amazon Cognito Authorization Issue](amazon_cognito_authz_issue/README.md)
+5. [Android App Pentesting steps](android_app_pentesting_steps/README.md)
+	1. [Pentest Lifecycle](android_app_pentesting_steps/pentest_lifecycle/README.md)
+	2. [Typical Steps](android_app_pentesting_steps/typical_steps/README.md)
+	3. [Flow](android_app_pentesting_steps/flow/README.md)
