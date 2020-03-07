@@ -3,7 +3,8 @@
 - [Reverse Engineering](#reverse-engineering)
   - [1. Identify the Supported Architecture](#1-identify-the-supported-architecture)
   - [2. Explore the APK Bundle](#2-explore-the-apk-bundle)
-  - [3. Decode the APK](#3-decode-the-apk)
+  - [3. Decode using APKTool](#3-decode-using-apktool)
+    - [Decode using SMALI](decode-using-smali)
 
 ## 1. Identify the Supported Architecture
 
@@ -31,7 +32,7 @@
 > **EXERCISE-1:**
 > Make a list of all interesting files and folders that you see in the unzipped APK 
 
-## 3. Decode the APK
+## 3. Decode using APKTool
 
 1. Convert the APK into a JAR file using **Enjarify** tool
 
@@ -65,5 +66,21 @@
 
 > **EXERCISE-3:**
 > Can you identify the attack surface by analyzing *AndroidManifest.xml* file and other class files?
+>1. In the decoded APK, look for classes.dex file/s. These are the code of the APK.
+
+>2. This .dex file can be decoded by Dex2Jar tool or BakSMALI can be used. 
+
+>3. We will prefer BakSMALI as it is easier to change and re-compile.
+
+### Decode using SMALI
+1. Extract APK and locate classes.dex file/s.
+
+2. Run BakSMALI to decode classes.dex file/s
+    
+        $ java -jar baksmali-2.3.4.jar d C:\Mohit\Personal\Null_Android\Day1\Activity_Service\Sample1\app\build\outputs\apk\release\app-release-unsigned\classes.dex
+
+3. An folder named 'out' will be created in the terminal/command-prompt location.
+
+[To understand about SMALI code](pending)
 
 [Repacking the apk after a change.](../Recompiling_APK/README.md)
